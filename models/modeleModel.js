@@ -1,3 +1,6 @@
+/*
+   @raphabiz
+*/
 
 const mongoose = require('mongoose');
 
@@ -14,9 +17,9 @@ const modeleSchema = new Schema(
             type: String,
             required: true
         }
-    
-    
+
+
     },
-    { collection : 'modele' }
+    { collection: 'modele' }
 );
-module.exports =mongoose.models.modele || mongoose.model('modele', modeleSchema);
+module.exports = mongoose.models.modele || mongoose.model('modele', modeleSchema);

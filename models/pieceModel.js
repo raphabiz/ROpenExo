@@ -1,3 +1,7 @@
+/*
+   @raphabiz
+*/
+
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
@@ -13,9 +17,9 @@ const pieceSchema = new Schema(
             type: String,
             required: true
         },
-    
-    
+
+
     },
-    { collection : 'piece' }
+    { collection: 'piece' }
 );
-module.exports =mongoose.models.piece || mongoose.model('piece', pieceSchema);
+module.exports = mongoose.models.piece || mongoose.model('piece', pieceSchema);
