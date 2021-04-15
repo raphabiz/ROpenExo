@@ -1,8 +1,21 @@
-<h2>Liste de modèles de bras robotisés prédéfinies</h2>
-<div class="card text-white bg-primary mb-3 mt-3" style="max-width: 20rem;">
-  <a style="text-decoration: none; color: inherit;" routerLink='piece'>
-  <div class="card-body">
-    <h4 class="card-title">{{modeles.name}}</h4>
-  </div>
-  </a>
-</div>
+<!--
+   @raphabiz
+-->
+
+<h2>Modèle choisie et ses pièces composantes</h2>
+<button class="btn btn-info backBtn pull-left" type="button" (click)="backClicked()">
+  < Retour</button>
+    <div class="card text-white bg-primary mb-3 mt-3" style="max-width: 20rem;">
+      <a style="text-decoration: none; color: inherit;">
+        <div class="card-body">
+          <h4 class="card-title">{{modeles.name}}</h4>
+
+        </div>
+      </a>
+    </div>
+
+    <div *ngFor="let t of tab">
+      <h5 *ngFor="let r of t index as i;">
+        <a routerLink='piece/{{r}}'>Afficher la pièce n°{{i+1}}</a>
+      </h5>
+    </div>

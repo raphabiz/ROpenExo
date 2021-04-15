@@ -1,3 +1,7 @@
+/*
+   @raphabiz
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -8,17 +12,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ModeleComponent implements OnInit {
   public modeles;
-  constructor(private http: HttpClient) { }
 
+  constructor(private http: HttpClient) { }
   ngOnInit(){
     this.getModele();
+  
   }
   getModele() {
       this.http.get('http://localhost:5500/modele/').subscribe(
-          data => { this.modeles = data},
+          data => { this.modeles = data;
+
+          },
           err => console.error(err),
        () => console.log('done loading modele')
      );
    }
-
 }

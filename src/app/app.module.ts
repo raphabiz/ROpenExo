@@ -1,3 +1,7 @@
+/*
+   @raphabiz
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,7 +16,7 @@ import { ModeleByIdComponent } from './modele-by-id/modele-by-id.component';
 const appRoutes:Routes =[
   {path: 'modele', component : ModeleComponent},
   {path: 'modele/:id1', component : ModeleByIdComponent},
-  {path: 'modele/:id1/piece', component : PieceComponent}
+  {path: 'modele/:id1/piece/:id2', component : PieceComponent}
 ];
 @NgModule({
   declarations: [

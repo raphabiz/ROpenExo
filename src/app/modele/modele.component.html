@@ -1,8 +1,14 @@
+<!--
+   @raphabiz
+-->
+
 <h2>Liste de modèles de bras robotisés prédéfinies</h2>
-<div *ngFor="let modele of modeles"  [routerLink]="['/piece', modele.idPiece]"class="card text-white bg-primary mb-3 mt-3" style="max-width: 20rem;">
+<div *ngFor="let modele of modeles " [routerLink]="['/piece', modele.idPiece]"
+  class="card text-white bg-primary mb-3 mt-3" style="max-width: 20rem;">
   <a style="text-decoration: none; color: inherit;" routerLink='/modele/{{modele._id}}'>
-  <div class="card-body">
-    <h4 class="card-title">{{modele.name}}</h4>
-  </div>
+    <div class="card-body">
+      <h4 class="card-title">{{modele.name}}
+      </h4>
+    </div>
   </a>
 </div>

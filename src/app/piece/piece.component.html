@@ -1,12 +1,16 @@
+<!--
+   @raphabiz
+-->
 
-
-<app-modele-by-id></app-modele-by-id>
-<h2>Liste des pièces liées au modèle choisie</h2>
-<div *ngIf=" piece._id == modele.idPiece" class="card text-white bg-primary mb-3 mt-3" style="max-width: 20rem;">
-  <a style="text-decoration: none; color: inherit;" >
-  <div class="card-body">
-    <h4 class="card-title">{{piece.name}}</h4>
-    <p class="card-text">{{piece.description}}</p>
-  </div>
-  </a>
-</div>
+<h2>Description de la pièce </h2>
+<button class="btn btn-info backBtn pull-left" type="button" (click)="backClicked()">
+  < Retour</button>
+    <div class="card text-white bg-primary mb-3 mt-3" style="max-width: 20rem;">
+      <a style="text-decoration: none; color: inherit;" routerLink='piece'>
+        <div class="card-body">
+          <h4 class="card-title">{{piece.name}}</h4>
+          <h6 class="card-title">Description : {{piece.description}}</h6>
+          <h6 class="card-title">Référence n° : {{piece._id}}</h6>
+        </div>
+      </a>
+    </div>
