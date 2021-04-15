@@ -7,16 +7,19 @@ import { AppComponent } from './app.component';
 import { ModeleComponent } from './modele/modele.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PieceComponent } from './piece/piece.component';
+import { ModeleByIdComponent } from './modele-by-id/modele-by-id.component';
 
 const appRoutes:Routes =[
   {path: 'modele', component : ModeleComponent},
-  {path: 'piece', component : PieceComponent}
+  {path: 'modele/:id1', component : ModeleByIdComponent},
+  {path: 'modele/:id1/piece', component : PieceComponent}
 ];
 @NgModule({
   declarations: [
     AppComponent,
     ModeleComponent,
-    PieceComponent
+    PieceComponent,
+    ModeleByIdComponent
   ],
   imports: [
     BrowserModule,
