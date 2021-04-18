@@ -13,7 +13,6 @@ app.use(bodyParser.json());
 app.use('/piece',pieceRoutes);
 
 app.use('/modele',modeleRoutes);
-app.use('/admin',postsRoutes);
 
 app.use('/piecePersonnalise',piecePerso);
 
