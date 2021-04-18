@@ -16,7 +16,7 @@ const PostModel = mongoose.model(
             default: Date.now
         }
     },
-    "posts"
+    "admin"
 );
 
 module.exports = { PostModel };
