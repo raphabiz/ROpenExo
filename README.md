@@ -17,8 +17,8 @@ Il nous tout d'abord avoir une base de données :
 
 Pour lancer notre plateforme web :
   
- placez vous sur la branche frontROpenExo et lancez: NPM INSTALL 
- faites de même avec la branche apiROpenExo
+ placez vous sur la branche frontRaph et lancez: NPM INSTALL 
+ faites de même avec la branche apiRaph
 
  afin de lancer notre api placez vous sur la branche API lancez la commande npm start dans votre terminal.
  
