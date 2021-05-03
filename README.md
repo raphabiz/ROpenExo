@@ -1,21 +1,28 @@
 # ROpenExo
 
-Il est important d'avoir MongoDb installer sur son poste .
-Nous recommandons Mongo Compass qui permet d'avoir une interface utilisateur de la base de données .
+Il nous tout d'abord avoir une base de données : 
 
-Après installation de MongoDb,lancez la commande mongod ,créez dans MongoCompass la base de donnée exo-api et y importer 2 collections qui sont présente sous forme de fichier json (modele.json piece.json) dans apiRaph.
+  Nous avons decider d'implementer notre projet grace à la base de données NOSQL MongoDB.
+  Pour y avoir accès il vous faut installer MongoBD sur votre poste. Nous vous conseillons d'installer aussi MongoCompass pour avoir une interface utilisateur afin d'importer nos fichiers de données.
+  
+  Une fois l'installation terminée : lancez la commande mongod dans votre terminal.
+  
+  Ouvrez l'interface MongoCompass et creer une nouvelle base de données avec le bouton : create collection en vert 
+  
+  Importez ensuite nos fichiers de données modele.json et piece.json grace à : in your collection -> add data -> import file 
+  
 
-Pour lancer le site il faut récupérer dans deux fichiers diférents les branches apiRaph et frontRaph.
+Pour lancer notre plateforme web :
+  
+ placez vous sur la branche frontROpenExo et lancez: NPM INSTALL 
+ faites de même avec la branche apiROpenExo
 
-Ensuite il faut lancer la commande npm install sur le front et le back
+ afin de lancer notre api placez vous sur la branche API lancez la commande npm start dans votre terminal.
+ 
+ placez vous maintenant dans notre front et lancez ng build ou ng serve afin de lancer l'application web.
+ 
 
-Et pour finir la commande npm start .
-
-
-
-
-
-Si vous rencontrez une erreur lié au CORS un add-on doit être ajouté au navigateur :
+Si vous rencontrez une erreur liée au CORS un add-on doit être ajouté au navigateur :
 https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=fr
 
 
