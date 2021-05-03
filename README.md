@@ -1,5 +1,8 @@
 # ROpenExo
 
+Notre application fait appel à une api que nous implementer.
+
+
 Il nous tout d'abord avoir une base de données : 
 
   Nous avons decider d'implementer notre projet grace à la base de données NOSQL MongoDB.
